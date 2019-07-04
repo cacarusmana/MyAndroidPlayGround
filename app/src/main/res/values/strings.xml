@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">MyKotlinPlayGroud</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="home_menu_array">
+        <item>Recycler View</item>
+        <item>Bottom Navigation</item>
+        <item>Bottom Sheet</item>
+        <item>Collapsing Toolbar</item>
+        <item>Showcase View</item>
+        <item>Coroutine</item>
+    </string-array>
+
 </resources>
