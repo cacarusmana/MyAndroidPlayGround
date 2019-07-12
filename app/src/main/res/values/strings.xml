@@ -9,6 +9,13 @@
         <item>Collapsing Toolbar</item>
         <item>Showcase View</item>
         <item>Coroutine</item>
+        <item>Youtube View</item>
+        <item>Firebase Authentication</item>
+    </string-array>
+
+    <string-array name="recycler_view_menu_array">
+        <item>Nested Recycler View</item>
+        <item>Recycler View Type</item>
     </string-array>
 
 </resources>
