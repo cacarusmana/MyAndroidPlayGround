@@ -9,7 +9,7 @@ import android.view.MenuItem
 import com.playground.caca.R
 import com.playground.caca.util.toast
 import com.playground.caca.view.adapter.MainMenuAdapter
-import com.playground.caca.view.recyclerview.NestedRecyclerViewActivity
+import com.playground.caca.view.bottomsheet.BottomSheetActivity
 import com.playground.caca.view.recyclerview.RecyclerViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -50,11 +50,22 @@ class MainActivity : BaseActivity(), CoroutineScope {
 
     override fun initListener() {
         rvAdapter.addListener { menuName, _ ->
-            if (menuName.toLowerCase().contains("recycler")) {
-                startActivity(Intent(this@MainActivity, RecyclerViewActivity::class.java))
-            } else {
-                toast(menuName)
+
+            with(menuName.toLowerCase()) {
+
+                when {
+                    contains("recycler") -> startActivity(Intent(this@MainActivity, RecyclerViewActivity::class.java))
+                    contains("bottom sheet") -> startActivity(
+                        Intent(
+                            this@MainActivity,
+                            BottomSheetActivity::class.java
+                        )
+                    )
+                    else -> toast(this)
+                }
+
             }
+
         }
 
         fab.setOnClickListener { view ->

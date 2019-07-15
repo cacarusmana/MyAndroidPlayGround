@@ -27,3 +27,16 @@ fun View.margin(left: Int = 0, top: Int = 0, right: Int = 0, bottom: Int = 0) {
 
     layoutParams = params
 }
+
+
+fun View.visible() {
+    visibility = View.VISIBLE
+}
+
+fun View.invisible() {
+    visibility = View.INVISIBLE
+}
+
+fun View.gone() {
+    visibility = View.GONE
+}

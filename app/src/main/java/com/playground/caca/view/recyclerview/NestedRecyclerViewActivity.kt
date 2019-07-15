@@ -32,13 +32,14 @@ class NestedRecyclerViewActivity : BaseActivity() {
             adapter = parentsAdapter
         }
 
-        GlobalScope.launch {
+        GlobalScope.launch(Dispatchers.Main) {
             val parents = withContext(Dispatchers.Default) {
-                ParentDataFactory.getParents(100)
+                ParentDataFactory.getParents(20)
             }
 
             parentsAdapter.notifyChanges(parents)
         }
+
     }
 
     override fun initListener() {
