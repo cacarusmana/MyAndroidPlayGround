@@ -1,10 +1,10 @@
 package com.playground.caca.view.adapter
 
 import android.content.Context
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.playground.caca.R
 import com.playground.caca.model.ParentModel
 import com.playground.caca.util.inflate
@@ -43,7 +43,11 @@ class ParentModelAdapter(
             tvTitle.text = title
 
             rvChilds.apply {
-                layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+                layoutManager = LinearLayoutManager(
+                    context,
+                    RecyclerView.HORIZONTAL,
+                    false
+                )
                 adapter = ChildModelAdapter(children)
                 setRecycledViewPool(viewPool)
             }

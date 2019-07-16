@@ -1,8 +1,8 @@
 package com.playground.caca.view
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 
-open abstract class BaseActivity : AppCompatActivity() {
+abstract class BaseActivity : AppCompatActivity() {
 
     abstract fun initComponent()
 

@@ -1,8 +1,8 @@
 package com.playground.caca.view.adapter
 
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.playground.caca.R
 import com.playground.caca.model.ChildModel
 import com.playground.caca.util.dp

@@ -1,9 +1,9 @@
 package com.playground.caca.view.adapter
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.playground.caca.R
 import com.playground.caca.util.inflate
 import kotlinx.android.extensions.LayoutContainer
@@ -32,7 +32,8 @@ class MainMenuAdapter(
         this.listener = listener
     }
 
-    inner class MyViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView), LayoutContainer {
+    inner class MyViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView),
+        LayoutContainer {
 
         fun bindItem(position: Int, menuName: String, listener: (String, Int) -> Unit) {
             tvMenuName.text = menuName

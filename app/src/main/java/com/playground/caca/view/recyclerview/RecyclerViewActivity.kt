@@ -2,7 +2,7 @@ package com.playground.caca.view.recyclerview
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.playground.caca.R
 import com.playground.caca.util.toast
 import com.playground.caca.view.BaseActivity

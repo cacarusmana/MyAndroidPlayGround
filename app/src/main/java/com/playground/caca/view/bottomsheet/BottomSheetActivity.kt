@@ -1,8 +1,8 @@
 package com.playground.caca.view.bottomsheet
 
 import android.os.Bundle
-import android.support.design.widget.BottomSheetBehavior
-import android.support.design.widget.BottomSheetDialog
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.playground.caca.R
 import com.playground.caca.view.BaseActivity
 import kotlinx.android.synthetic.main.activity_bottom_sheet.*

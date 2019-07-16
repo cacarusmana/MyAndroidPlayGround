@@ -1,8 +1,8 @@
 package com.playground.caca.view.recyclerview
 
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
-import android.widget.LinearLayout
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.playground.caca.R
 import com.playground.caca.view.BaseActivity
 import com.playground.caca.view.adapter.ParentModelAdapter
@@ -28,7 +28,11 @@ class NestedRecyclerViewActivity : BaseActivity() {
         parentsAdapter = ParentModelAdapter(this, mutableListOf())
 
         rvParents.apply {
-            layoutManager = LinearLayoutManager(this@NestedRecyclerViewActivity, LinearLayout.VERTICAL, false)
+            layoutManager = LinearLayoutManager(
+                this@NestedRecyclerViewActivity,
+                RecyclerView.VERTICAL,
+                false
+            )
             adapter = parentsAdapter
         }
 

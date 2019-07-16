@@ -2,10 +2,10 @@ package com.playground.caca.view
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuItem
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import com.playground.caca.R
 import com.playground.caca.util.toast
 import com.playground.caca.view.adapter.MainMenuAdapter
