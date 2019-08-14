@@ -25,12 +25,20 @@
                 android:label="@string/app_name"/>
 
         <activity
+                android:name=".view.recyclerview.GridViewActivity"
+                android:label="@string/app_name"/>
+
+        <activity
                 android:name=".view.recyclerview.RecyclerViewActivity"
                 android:label="@string/app_name"
                 android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
                 android:name=".view.bottomsheet.BottomSheetActivity"
+                android:label="@string/app_name"/>
+
+        <activity
+                android:name=".view.ShimmerActivity"
                 android:label="@string/app_name"/>
     </application>
 

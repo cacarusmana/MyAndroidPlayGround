@@ -61,6 +61,7 @@ class MainActivity : BaseActivity(), CoroutineScope {
                             BottomSheetActivity::class.java
                         )
                     )
+                    contains("shimmer") -> startActivity(Intent(this@MainActivity, ShimmerActivity::class.java))
                     else -> toast(this)
                 }
 

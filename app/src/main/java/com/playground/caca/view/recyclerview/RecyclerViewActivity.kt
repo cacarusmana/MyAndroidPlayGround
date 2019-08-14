@@ -37,10 +37,10 @@ class RecyclerViewActivity : BaseActivity() {
 
     override fun initListener() {
         rvAdapter.addListener { menuName, position ->
-            if (position == 0) {
-                startActivity(Intent(this@RecyclerViewActivity, NestedRecyclerViewActivity::class.java))
-            } else {
-                toast(menuName)
+            when (position) {
+                0 -> startActivity(Intent(this@RecyclerViewActivity, NestedRecyclerViewActivity::class.java))
+                1 -> startActivity(Intent(this@RecyclerViewActivity, GridViewActivity::class.java))
+                else -> toast(menuName)
             }
         }
 

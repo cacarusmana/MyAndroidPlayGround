@@ -6,15 +6,16 @@
         <item>Recycler View</item>
         <item>Bottom Navigation</item>
         <item>Bottom Sheet</item>
+        <item>Shimmer Layout</item>
         <item>Collapsing Toolbar</item>
         <item>Showcase View</item>
-        <item>Coroutine</item>
         <item>Youtube View</item>
         <item>Firebase Authentication</item>
     </string-array>
 
     <string-array name="recycler_view_menu_array">
         <item>Nested Recycler View</item>
+        <item>Grid View Layout</item>
         <item>Recycler View Type</item>
     </string-array>
 
