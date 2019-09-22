@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal">
+
+
+    <TextView
+            style="@style/LabelText.Bold"
+            android:text="This is fragment"/>
+
+    <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"/>
+
+    <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Message to Activity"/>
+
+    <TextView
+            android:id="@+id/tvMessage"
+            style="@style/LabelText"
+            android:text="Message from Activity will appear here"/>
+
+
+</LinearLayout>

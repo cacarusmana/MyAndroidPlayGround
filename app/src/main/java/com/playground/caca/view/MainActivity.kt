@@ -10,6 +10,7 @@ import com.playground.caca.R
 import com.playground.caca.util.toast
 import com.playground.caca.view.adapter.MainMenuAdapter
 import com.playground.caca.view.bottomsheet.BottomSheetActivity
+import com.playground.caca.view.eventbus.EventBusActivity
 import com.playground.caca.view.recyclerview.RecyclerViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -62,6 +63,7 @@ class MainActivity : BaseActivity(), CoroutineScope {
                         )
                     )
                     contains("shimmer") -> startActivity(Intent(this@MainActivity, ShimmerActivity::class.java))
+                    contains("eventbus") -> startActivity(Intent(this@MainActivity, EventBusActivity::class.java))
                     else -> toast(this)
                 }
 

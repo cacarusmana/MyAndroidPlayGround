@@ -10,7 +10,7 @@
         <item>Collapsing Toolbar</item>
         <item>Showcase View</item>
         <item>Youtube View</item>
-        <item>Firebase Authentication</item>
+        <item>EventBus</item>
     </string-array>
 
     <string-array name="recycler_view_menu_array">
